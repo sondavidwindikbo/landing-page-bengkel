@@ -1,0 +1,105 @@
+/* Jika ingin warna background lebih spesifik daripada bg-dark,
+                 silakan override di sini. Contoh: #1D2530 */
+.bg-navbar {
+  background-color: #1d2530; /* Sesuaikan dengan kebutuhan */
+}
+.navbar-brand {
+  font-weight: 600; /* Bikin brand sedikit tebal */
+}
+.navbar-nav {
+  align-items: flex-start !important;
+  padding-top: 8px;
+}
+.nav-item:hover {
+  background-color: #ffc107;
+  border-radius: 2px;
+}
+/* Heading */
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+
+/* Body Text */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #111a25 !important;
+  color: white;
+}
+.bg-card {
+  background-color: #111a25 !important;
+}
+
+/* Tagline Khusus */
+.tagline {
+  font-family: "Russo One", sans-serif;
+}
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/herobg.jpg");
+  background-size: cover;
+  padding: 150px 0;
+  color: white;
+}
+#tentang {
+  color: white;
+}
+/* #layanan {
+                            color: white;
+                          } */
+
+span {
+}
+/* Style dasar card */
+.card {
+  background-color: #1d2530 !important;
+  color: white;
+}
+
+.social_links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.social_links li {
+  display: inline-block;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #222; /* Warna latar default */
+  color: #c9a26a; /* Warna ikon */
+  font-size: 24px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover Effects */
+.social-icon.instagram:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.social-icon.facebook:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.social-icon.linkedin:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.social-icon.youtube:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
