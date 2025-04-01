@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navbar Modifikasi</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+
+    <!-- (Opsional) Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- Import Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Roboto&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome untuk ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      /* Jika ingin warna background lebih spesifik daripada bg-dark,
+                 silakan override di sini. Contoh: #1D2530 */
+      .bg-navbar {
+        background-color: #1d2530; /* Sesuaikan dengan kebutuhan */
+      }
+      .navbar-brand {
+        font-weight: 600; /* Bikin brand sedikit tebal */
+      }
+      .navbar-nav {
+        align-items: flex-start !important;
+        padding-top: 8px;
+      }
+      .nav-item:hover {
+        background-color: #ffc107;
+        border-radius: 2px;
+      }
+      /* Heading */
+      h1,
+      h2,
+      h3 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 600;
+      }
+
+      /* Body Text */
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #111a25 !important;
+        color: white;
+      }
+      .bg-card {
+        background-color: #111a25 !important;
+      }
+
+      /* Tagline Khusus */
+      .tagline {
+        font-family: "Russo One", sans-serif;
+      }
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("img/herobg.jpg");
+        background-size: cover;
+        padding: 150px 0;
+        color: white;
+      }
+      #tentang {
+        color: white;
+      }
+      /* #layanan {
+                color: white;
+              } */
+
+      span {
+      }
+      /* Style dasar card */
+      .card {
+        background-color: #1d2530 !important;
+        color: white;
+      }
+
+      .social_links {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding: 0;
+      }
+
+      .social_links li {
+        display: inline-block;
+      }
+
+      .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #222; /* Warna latar default */
+        color: #c9a26a; /* Warna ikon */
+        font-size: 24px;
+        border-radius: 8px;
+        transition: 0.3s ease;
+        text-decoration: none;
+      }
+
+      /* Hover Effects */
+      .social-icon.instagram:hover {
+        background-color: #ffc107;
+        color: #fff;
+      }
+
+      .social-icon.facebook:hover {
+        background-color: #ffc107;
+        color: #fff;
+      }
+
+      .social-icon.linkedin:hover {
+        background-color: #ffc107;
+        color: #fff;
+      }
+
+      .social-icon.youtube:hover {
+        background-color: #ffc107;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-navbar shadow fixed-top shadow">
+      <div class="container">
+        <!-- Brand (Logo + Teks) -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/logo.jpg" alt="Logo" width="40" class="me-2" />
+          <h1>Bengkel Papua Bisa</h1>
+        </a>
+
+        <!-- Toggler (untuk mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#layanan">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimoni">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <img
+          src="img/logoengkel-removebg-preview.png"
+          alt="Logo Bengkel"
+          width="200"
+          class="mb-3" />
+        <h1 class="display-4 fw-bold text-warning">Bengkel Papua Bisa</h1>
+        <p class="lead">
+          Kami memberikan solusi perawatan mobil dengan teknisi berpengalaman
+        </p>
+        <a
+          href="https://wa.me/6281364055537?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda!"
+          class="btn btn-warning btn-lg mt-3"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i>Hubungi Kami</a
+        >
+      </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-5 bg-warna">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4" style="margin-top: 5rem !important">
+              <span class="text-warning">Tentang</span> Kami
+            </h2>
+            <p>
+              Bengkel Maju Jaya telah melayani sejak 2010 dengan komitmen
+              memberikan servis terbaik untuk kendaraan Anda. Kami menggunakan
+              alat modern dan suku cadang berkualitas.
+            </p>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i
+                  class="fa-regular fa-square-check fa-lg s text-warning me-2"></i>
+                Teknisi bersertifikat
+              </li>
+              <li class="mb-2">
+                <i
+                  class="fa-regular fa-square-check fa-lg s text-warning me-2"></i>
+                Garansi 6 bulan
+              </li>
+              <li class="mb-2">
+                <i
+                  class="fa-regular fa-square-check fa-lg s text-warning me-2"></i>
+                Harga transparan
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="img/about.png"
+              alt="Tentang Bengkel"
+              class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-5">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5"
+          style="margin-top: 5rem !important">
+          <span class="text-warning">Layanan</span> Kami
+        </h2>
+        <div class="row g-4">
+          <!-- Layanan 1 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-oil-can display-4 text-warning mb-3"></i>
+                <h5 class="card-title">Ganti Oli</h5>
+                <p class="card-text">Mulai dari Rp 150.000</p>
+                <a href="#kontak" class="btn btn-outline-warning"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Layanan 2 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-tools display-4 text-warning mb-3"></i>
+                <h5 class="card-title">Tune-Up</h5>
+                <p class="card-text">Mulai dari Rp 300.000</p>
+                <a href="#kontak" class="btn btn-outline-warning"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Layanan 3 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-motorcycle display-4 text-warning mb-3"></i>
+                <h5 class="card-title">Perbaikan Mesin</h5>
+                <p class="card-text">Mulai dari Rp 500.000</p>
+                <a href="#kontak" class="btn btn-outline-warning"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- produk Section -->
+    <section id="layanan" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">
+          <span class="text-warning"> Sparepart & </span> Aksesoris
+        </h2>
+        <div class="row g-4">
+          <!-- Layanan 1 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-life-ring display-4 text-warning mb-3"></i>
+                <h5 class="card-title">Ban Motor</h5>
+                <p class="card-text">Mulai dari Rp 150.000</p>
+                <a href="#kontak" class="btn btn-outline-warning"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Layanan 2 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-oil-can display-4 text-warning mb-3"></i>
+                <h5 class="card-title">Oli Mesin</h5>
+                <p class="card-text">Mulai dari Rp 300.000</p>
+                <a href="#kontak" class="btn btn-outline-warning"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Layanan 3 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-lightbulb display-4 text-warning mb-3"></i>
+                <h5 class="card-title">Lampu</h5>
+                <p class="card-text">Mulai dari Rp 500.000</p>
+                <a href="#kontak" class="btn btn-outline-warning"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="py-5 bg-navbar shadow">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5"
+          style="margin-top: 5rem !important">
+          <span class="text-warning">Apa Kata</span> Pelanggan?
+        </h2>
+        <div class="row g-4">
+          <!-- Testimoni 1 -->
+          <div class="col-md-4">
+            <div class="bg-card testimonial-card h-100">
+              <div class="card-body text-center p-4">
+                <img
+                  src="img/Son Widikbo.png"
+                  class="rounded-circle mb-3"
+                  width="80"
+                  alt="Customer" />
+                <div class="text-warning mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="card-text">
+                  "Servis cepat dan hasilnya memuaskan. Harga juga bersaing!"
+                </p>
+                <h6 class="fw-bold">Son David Widikbo</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Testimoni 2 -->
+          <div class="col-md-4">
+            <div class="bg-card testimonial-card h-100">
+              <div class="card-body text-center p-4">
+                <img
+                  src="img/rony.jpg"
+                  class="rounded-circle mb-3"
+                  width="80"
+                  alt="Customer" />
+                <div class="text-warning mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="card-text">
+                  "Teknisinya ramah dan menjelaskan masalahnya dengan detail."
+                </p>
+                <h6 class="fw-bold">Ronald Wanimbo</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Testimoni 3 -->
+          <div class="col-md-4">
+            <div class="bg-card testimonial-card h-100">
+              <div class="card-body text-center p-4">
+                <img
+                  src="img/ino2.JPG"
+                  class="rounded-circle mb-3"
+                  width="80"
+                  alt="Customer" />
+                <div class="text-warning mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text">
+                  "Bengkelnya bersih dan nyaman. Recomended!"
+                </p>
+                <h6 class="fw-bold">Ino Tabuni</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-5 contact-section">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5"
+          style="margin-top: 5rem !important">
+          <span class="text-warning">Hubungi</span> Kami
+        </h2>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Form Kontak</h4>
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nama Anda"
+                      required />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Nomor HP" />
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      placeholder="Pesan Anda"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-warning">
+                    Kirim Pesan
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Tambahkan di dalam div .brand_logo -->
+            <div class="brand_logo py-3">
+              <ul class="social_links social_icon ul_li">
+                <li>
+                  <a
+                    href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fpapuabisa2024%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR3-vTE-zhiIis_eeZ07BjBSqmgNnT2NpPkxje6q-12ow37mrauGx2YtC8M_aem_IXlxHN5A1GJBqu0uQ_y8pA&h=AT07fMS2ibZEebtDP924Hza1H1nH1NisZAkMR4u40nahetgihQsnOYFK-Qy025RNrxwkbqOPgqPCPYyc3_MR0PIePyPIScrf4oW_6N9gCXR_88QtnRSqCGDNRmYUnIfhHdZ5"
+                    class="social-icon instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61563248354696"
+                    class="social-icon facebook"
+                    target="_blank"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon linkedin" target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@papua_bisa1"
+                    class="social-icon youtube"
+                    target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Lokasi Kami</h4>
+                <p>
+                  <i class="fas fa-map-marker-alt text-warning me-2"></i> Jl.
+                  Jeruk Nipis,Kotaraja Luar
+                </p>
+                <p>
+                  <i class="fas fa-phone text-warning me-2"></i> 081364055537
+                </p>
+                <p>
+                  <i class="fas fa-envelope text-warning me-2"></i>
+                  info@bengkelmajujaya.com
+                </p>
+                <p>
+                  <i class="fas fa-clock text-warning me-2"></i> Buka:
+                  Senin-Sabtu (08.00-17.00)
+                </p>
+                <!-- Google Maps Embed -->
+                <div class="ratio ratio-16x9 mt-3">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.7202262419755!2d140.67606387351074!3d-2.597103238460738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686cf5989881766d%3A0x400732d5fab9dd07!2sToko%20Buku%20Cahaya%20Papua!5e0!3m2!1sid!2sid!4v1743491798536!5m2!1sid!2sid"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navbar text-white py-5">
+      <div class="container text-right">
+        <p class="mb-0">© 2026 Bengkel Papua Bisa. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
